@@ -22,7 +22,17 @@ Emergency KillSwitch is a program written in Go which turn off all network conne
    cd KillSwitch_Network
    go build -o KillSwitch_Network.exe -ldflags -H=windowsgui
    ```
-   
+
 ## Utility
 
-If a Stealer tries to steal your data, you can quickly disable all network connections using the Alt+N hotkey. This will prevent the Stealer from sending your data to their server.
+- If a Stealer tries to steal your data, you can quickly disable all network connections using the Alt+N hotkey. This will prevent the Stealer from sending your data to their server.
+
+## Program Startup with Admin rights
+
+Create a Scheduled Task to trigger at log on.
+
+In the Create Task dialog, select the following:
+- General (tab), Run with highest privileges
+- Triggers (tab), New (button), Begin the task, At log on
+
+(Copie and Pasted from stack overflow i was lazy to explain it)
